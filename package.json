@@ -5,11 +5,13 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "dev:server": "json-server db.json -w -d -p 3001 500",
     "build": "tsc && vite build",
     "preview": "vite preview"
   },
   "dependencies": {
     "@types/react-paginate": "^7.1.1",
+    "axios": "^0.27.2",
     "phosphor-react": "^1.4.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -24,6 +26,7 @@
     "@types/styled-components": "^5.1.26",
     "@vitejs/plugin-react": "^2.0.1",
     "eslint": "^8.23.0",
+    "json-server": "^0.17.0",
     "typescript": "^4.6.4",
     "vite": "^3.0.7"
   }
