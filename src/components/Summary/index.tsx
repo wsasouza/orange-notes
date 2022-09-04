@@ -17,7 +17,7 @@ export function Summary() {
       <SummaryCard>
         <header>
           <span>Curso</span>
-          <Queue size={32} color="#fff" />
+          <Queue size={32} color="#fff" weight="fill" />
         </header>
         <strong>10 itens</strong>
         <p>Último curso adicionado em 02/09/2022</p>
@@ -25,11 +25,11 @@ export function Summary() {
 
       <SummaryCard>
         <header>
-          <span>Vídeo-Aula</span>
-          <MonitorPlay size={32} color="#fff" />
+          <span>Videoaula</span>
+          <MonitorPlay size={32} color="#fff" weight="fill" />
         </header>
         <strong>Nenhum item</strong>
-        <p>Nenhuma vídeo aula adicionada ainda</p>
+        <p>Nenhuma videoaula adicionada</p>
       </SummaryCard>
     </SummaryContainer>
   )
