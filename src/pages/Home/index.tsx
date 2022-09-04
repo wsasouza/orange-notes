@@ -1,8 +1,9 @@
+import { Header } from '../../components/Header'
+
 export function Home() {
   return (
     <div>
-      <h1>Welcome to home page</h1>
-      <p>Teste tipografia e tema</p>
+      <Header />
     </div>
   )
 }
