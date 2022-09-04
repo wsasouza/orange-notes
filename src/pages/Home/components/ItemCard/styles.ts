@@ -7,8 +7,8 @@ interface ItemContainerCardProps {
 export const ItemCardContainer = styled.div<ItemContainerCardProps>`
   min-width: 100%;
   display: grid;
-  grid-template-columns: 48% 15% 16% 16% 5%;
-  grid-template-areas: 'description value category date delete';
+  grid-template-columns: 43% 20% 16% 16% 5%;
+  grid-template-areas: 'description origin category date delete';
   padding: 1.125rem 2rem;
   border-radius: 6px;
   background: ${(props) => props.theme['gray-700']};
@@ -21,7 +21,7 @@ export const ItemCardContainer = styled.div<ItemContainerCardProps>`
   }
 
   .origin {
-    grid-area: value;
+    grid-area: origin;
     display: flex;
     align-items: center;
     text-decoration: none;
