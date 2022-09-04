@@ -1,8 +1,36 @@
 import { ArticleMedium, MonitorPlay, Queue } from 'phosphor-react'
 
+import { useSummary } from '../../hooks/useSummary'
+import { dateFormatter } from '../../utils/formatter'
+
 import { SummaryCard, SummaryContainer } from './styles'
 
 export function Summary() {
+  const { summary, lastItemArticle, lastItemCourse, lastItemVideo } =
+    useSummary()
+
+  const quantityItemsDisplay = (quantityItems: number) => {
+    if (quantityItems === 0) return 'Nenhum item'
+    else if (quantityItems === 1) {
+      return `${`${quantityItems}`.padStart(2, '0')} item`
+    } else return `${`${quantityItems}`.padStart(2, '0')} itens`
+  }
+
+  const lastDateItemArticle =
+    lastItemArticle === 0
+      ? 'Nenhum artigo adicionado'
+      : `Último artigo adicionado em ${dateFormatter.format(lastItemArticle)}`
+
+  const lastDateItemCourse =
+    lastItemCourse === 0
+      ? 'Nenhum curso adicionado'
+      : `Último curso adicionado em ${dateFormatter.format(lastItemCourse)}`
+
+  const lastDateItemVideo =
+    lastItemVideo === 0
+      ? 'Nenhuma videoaula adicionada'
+      : `Última videoaula adicionada em ${dateFormatter.format(lastItemVideo)}`
+
   return (
     <SummaryContainer>
       <SummaryCard>
@@ -10,8 +38,8 @@ export function Summary() {
           <span>Artigo</span>
           <ArticleMedium size={32} color="#fff" />
         </header>
-        <strong>9 itens</strong>
-        <p>Último artigo adicionado em 04/09/2022</p>
+        <strong>{quantityItemsDisplay(summary.article)}</strong>
+        <p>{lastDateItemArticle}</p>
       </SummaryCard>
 
       <SummaryCard>
@@ -19,8 +47,8 @@ export function Summary() {
           <span>Curso</span>
           <Queue size={32} color="#fff" weight="fill" />
         </header>
-        <strong>10 itens</strong>
-        <p>Último curso adicionado em 02/09/2022</p>
+        <strong>{quantityItemsDisplay(summary.course)}</strong>
+        <p>{lastDateItemCourse}</p>
       </SummaryCard>
 
       <SummaryCard>
@@ -28,8 +56,8 @@ export function Summary() {
           <span>Videoaula</span>
           <MonitorPlay size={32} color="#fff" weight="fill" />
         </header>
-        <strong>Nenhum item</strong>
-        <p>Nenhuma videoaula adicionada</p>
+        <strong>{quantityItemsDisplay(summary.video)}</strong>
+        <p>{lastDateItemVideo}</p>
       </SummaryCard>
     </SummaryContainer>
   )

@@ -22,7 +22,7 @@ export const SummaryCard = styled.div`
   background: ${(props) => props.theme['blue-700']};
   border-radius: 6px;
   padding: 2rem;
-  min-width: 17.5rem;
+  min-width: 21rem;
 
   header {
     display: flex;
