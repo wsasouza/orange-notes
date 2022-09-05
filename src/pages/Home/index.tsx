@@ -131,7 +131,7 @@ export function Home() {
           ) : (
             <NoResultContainer>
               <img src={noResult} alt="" />
-              <span>Sem registros</span>
+              <p>Sem registros</p>
             </NoResultContainer>
           )}
         </ItemsContainer>

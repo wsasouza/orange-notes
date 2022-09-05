@@ -60,6 +60,10 @@ export const NoResultContainer = styled.div`
     max-width: 12.5rem;
     margin: 3rem auto 2rem;
   }
+
+  p {
+    margin-bottom: 3rem;
+  }
 `
 
 export const PaginateContainer = styled.div`
