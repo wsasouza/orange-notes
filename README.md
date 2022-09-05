@@ -71,10 +71,12 @@ $ yarn
 # Run the server
 $ yarn dev:server
 
+# The server will initialize in the <http://localhost:3001>
+
 # Run the project
 $ yarn dev
 
-# The server will initialize in the <http://localhost:5173>
+# The project will initialize in the <http://localhost:5173>
 ```
 
 ## :memo: License
