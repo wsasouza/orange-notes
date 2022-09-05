@@ -8,7 +8,7 @@ interface Item {
   description: string
   origin: string
   link: string
-  type: 'article' | 'course' | 'video'
+  type: 'artigo' | 'curso' | 'videoaula'
   category: string
   createdAt: string
 }
@@ -18,7 +18,7 @@ interface CreateItemInput {
   origin: string
   link: string
   category: string
-  type: 'article' | 'course' | 'video'
+  type: 'artigo' | 'curso' | 'videoaula'
 }
 
 interface ItemContextType {

@@ -7,7 +7,7 @@ interface Item {
   description: string
   origin: string
   link: string
-  type: 'article' | 'course' | 'video'
+  type: 'artigo' | 'curso' | 'videoaula'
   category: string
   createdAt: string
 }
@@ -19,7 +19,7 @@ export function useSummary() {
 
   function getLastItemDate(
     collection: Item[],
-    type: 'article' | 'course' | 'video',
+    type: 'artigo' | 'curso' | 'videoaula',
   ) {
     const collectionFilttered = collection.filter((item) => item.type === type)
 
@@ -35,17 +35,17 @@ export function useSummary() {
     return lastItemDate
   }
 
-  const lastItemArticle = getLastItemDate(items, 'article')
+  const lastItemArticle = getLastItemDate(items, 'artigo')
 
-  const lastItemCourse = getLastItemDate(items, 'course')
+  const lastItemCourse = getLastItemDate(items, 'curso')
 
-  const lastItemVideo = getLastItemDate(items, 'video')
+  const lastItemVideo = getLastItemDate(items, 'videoaula')
 
   const summary = items.reduce(
     (acc, item) => {
-      if (item.type === 'article') {
+      if (item.type === 'artigo') {
         acc.article += 1
-      } else if (item.type === 'course') {
+      } else if (item.type === 'curso') {
         acc.course += 1
       } else {
         acc.video += 1

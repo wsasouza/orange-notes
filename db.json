@@ -6,26 +6,8 @@
       "origin": "Rocketseat",
       "link": "https://app.rocketseat.com.br/ignite/react-js-2022",
       "category": "front",
-      "type": "course",
+      "type": "curso",
       "createdAt": "2022-09-01T21:53:43.792Z"
-    },
-    {
-      "id": 2,
-      "description": "Múltiplas páginas com React Router DOM",
-      "origin": "YouTube",
-      "link": "https://www.youtube.com/watch?v=p9eZSkPyuWE",
-      "category": "front",
-      "type": "video",
-      "createdAt": "2022-09-02T21:53:43.792Z"
-    },
-    {
-      "id": 3,
-      "description": "O que é um CMS?",
-      "origin": "YouTube",
-      "link": "https://www.youtube.com/watch?v=5wh1UY5XKUE",
-      "category": "front",
-      "type": "video",
-      "createdAt": "2022-09-03T21:53:43.792Z"
     },
     {
       "id": 4,
@@ -33,17 +15,8 @@
       "origin": "Rocketseat",
       "link": "https://app.rocketseat.com.br/ignite/node-js",
       "category": "back",
-      "type": "course",
+      "type": "curso",
       "createdAt": "2022-09-04T21:53:43.792Z"
-    },
-    {
-      "id": 5,
-      "description": "Introdução ao SQL",
-      "origin": "Site",
-      "link": "https://sqlbolt.com/",
-      "category": "back",
-      "type": "article",
-      "createdAt": "2022-08-21T21:53:43.792Z"
     },
     {
       "id": 6,
@@ -51,7 +24,7 @@
       "origin": "Site",
       "link": "https://javascript30.com/",
       "category": "language",
-      "type": "article",
+      "type": "artigo",
       "createdAt": "2022-09-03T21:53:43.792Z"
     }
   ],

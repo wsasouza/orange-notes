@@ -45,7 +45,7 @@ export function Summary() {
       <SummaryCard>
         <header>
           <span>Curso</span>
-          <Queue size={32} color="#fff" weight="fill" />
+          <Queue size={32} color="#04F6FB" weight="fill" />
         </header>
         <strong>{quantityItemsDisplay(summary.course)}</strong>
         <p>{lastDateItemCourse}</p>
@@ -54,7 +54,7 @@ export function Summary() {
       <SummaryCard>
         <header>
           <span>Videoaula</span>
-          <MonitorPlay size={32} color="#fff" weight="fill" />
+          <MonitorPlay size={32} color="#F71305" weight="fill" />
         </header>
         <strong>{quantityItemsDisplay(summary.video)}</strong>
         <p>{lastDateItemVideo}</p>
