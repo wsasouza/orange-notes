@@ -2,30 +2,102 @@
   "items": [
     {
       "id": 1,
-      "description": "Trilha Ignite ReactJS",
-      "origin": "Rocketseat",
-      "link": "https://app.rocketseat.com.br/ignite/react-js-2022",
+      "description": "Performance no React com memo",
+      "origin": "YouTube",
+      "link": "https://www.youtube.com/watch?v=3JycTWNGjF4",
       "category": "front",
+      "type": "videoaula",
+      "createdAt": "2022-08-25T21:53:43.792Z"
+    },
+    {
+      "id": 2,
+      "description": "Algoritmos e Estrutura de dados",
+      "origin": "AlgoMania",
+      "link": "https://algomania.com.br/aulas/",
+      "category": "algoritmos",
       "type": "curso",
-      "createdAt": "2022-09-01T21:53:43.792Z"
+      "createdAt": "2022-08-26T21:53:43.792Z"
+    },
+    {
+      "id": 3,
+      "description": "Desafios Javascript",
+      "origin": "Site",
+      "link": "https://www.jschallenger.com/",
+      "category": "language",
+      "type": "curso",
+      "createdAt": "2022-08-26T21:53:43.792Z"
     },
     {
       "id": 4,
+      "description": "Aplicações serverless no dia a dia",
+      "origin": "YouTube",
+      "link": "https://www.youtube.com/watch?v=UmPal0PGJ4w",
+      "category": "back",
+      "type": "videoaula",
+      "createdAt": "2022-08-28T21:53:43.792Z"
+    },
+    {
+      "id": 5,
+      "description": "JavaScript Arrays",
+      "origin": "Devmedia",
+      "link": "https://www.devmedia.com.br/javascript-arrays/4079",
+      "category": "language",
+      "type": "artigo",
+      "createdAt": "2022-08-30T21:53:43.792Z"
+    },
+    {
+      "id": 6,
       "description": "Trilha Ignite Node.js",
       "origin": "Rocketseat",
       "link": "https://app.rocketseat.com.br/ignite/node-js",
       "category": "back",
       "type": "curso",
+      "createdAt": "2022-08-31T21:53:43.792Z"
+    },
+    {
+      "id": 7,
+      "description": "Os desafios de ser DevRel",
+      "origin": "DevCommunity",
+      "link": "https://dev.to/feministech/os-desafios-de-ser-devrel-24po",
+      "category": "language",
+      "type": "artigo",
+      "createdAt": "2022-09-01T21:53:43.792Z"
+    },
+    {
+      "id": 8,
+      "description": "Introdução a Algoritmos",
+      "origin": "DevCommunity",
+      "link": "https://dev.to/feministech/introducao-a-algoritmos-4eom",
+      "category": "back",
+      "type": "artigo",
       "createdAt": "2022-09-04T21:53:43.792Z"
     },
     {
-      "id": 6,
+      "id": 9,
+      "description": "NestJS + TypeORM + GraphQL",
+      "origin": "YouTube",
+      "link": "https://www.youtube.com/watch?v=nDN4JRbFEns&t=88s",
+      "category": "back",
+      "type": "videoaula",
+      "createdAt": "2022-09-02T21:53:43.792Z"
+    },
+    {
+      "id": 10,
       "description": "30 Desafios de Javascript",
       "origin": "Site",
       "link": "https://javascript30.com/",
       "category": "language",
       "type": "artigo",
       "createdAt": "2022-09-03T21:53:43.792Z"
+    },
+    {
+      "id": 11,
+      "description": "Criando CRUD com NestJS",
+      "origin": "YouTube",
+      "link": "https://www.youtube.com/watch?v=cBIUOL6MFXw&t=1257s",
+      "category": "back",
+      "type": "videoaula",
+      "createdAt": "2022-09-01T21:53:43.792Z"
     }
   ]
 }
