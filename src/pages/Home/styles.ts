@@ -48,6 +48,20 @@ export const ItemsTable = styled.div`
   flex-direction: column;
   gap: 0.5rem;
 `
+
+export const NoResultContainer = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  img {
+    display: block;
+    max-width: 12.5rem;
+    margin: 3rem auto 2rem;
+  }
+`
+
 export const PaginateContainer = styled.div`
   .pagination {
     margin-top: 1.5rem;

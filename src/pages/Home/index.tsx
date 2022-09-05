@@ -9,12 +9,14 @@ import { Summary } from '../../components/Summary'
 import { ItemCard } from './components/ItemCard'
 import { SearchForm } from './components/SearchForm'
 import { ItemsContext } from '../../contexts/ItemsContexts'
+import noResult from '../../assets/no-result.svg'
 
 import {
   FilterContainer,
   InfoContainer,
   ItemsContainer,
   ItemsTable,
+  NoResultContainer,
   PaginateContainer,
 } from './styles'
 
@@ -58,6 +60,9 @@ export function Home() {
 
     await fetchItemsPage(currentPage, query)
   }
+
+  const hasItem = !!quantityItems
+  console.log(hasItem)
 
   const handleDeleteItem = async (id: number) => {
     await deleteItem(id)
@@ -104,24 +109,31 @@ export function Home() {
               )
             })}
           </ItemsTable>
-          <PaginateContainer>
-            <ReactPaginate
-              previousLabel={<CaretLeft size={24} weight="bold" />}
-              nextLabel={<CaretRight size={24} weight="bold" />}
-              breakClassName={'break'}
-              pageCount={pageCount}
-              marginPagesDisplayed={0}
-              onPageChange={handlePageClick}
-              containerClassName={'pagination'}
-              pageClassName={'page-item'}
-              pageLinkClassName={'page-link'}
-              previousClassName={'chevron'}
-              previousLinkClassName={'chevron-link'}
-              nextClassName={'chevron'}
-              nextLinkClassName={'chevron-link'}
-              activeClassName={'active'}
-            />
-          </PaginateContainer>
+          {hasItem ? (
+            <PaginateContainer>
+              <ReactPaginate
+                previousLabel={<CaretLeft size={24} weight="bold" />}
+                nextLabel={<CaretRight size={24} weight="bold" />}
+                breakClassName={'break'}
+                pageCount={pageCount}
+                marginPagesDisplayed={0}
+                onPageChange={handlePageClick}
+                containerClassName={'pagination'}
+                pageClassName={'page-item'}
+                pageLinkClassName={'page-link'}
+                previousClassName={'chevron'}
+                previousLinkClassName={'chevron-link'}
+                nextClassName={'chevron'}
+                nextLinkClassName={'chevron-link'}
+                activeClassName={'active'}
+              />
+            </PaginateContainer>
+          ) : (
+            <NoResultContainer>
+              <img src={noResult} alt="" />
+              <span>Sem registros</span>
+            </NoResultContainer>
+          )}
         </ItemsContainer>
       </div>
     </div>

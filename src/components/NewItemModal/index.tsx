@@ -4,7 +4,7 @@ import * as Dialog from '@radix-ui/react-dialog'
 import { Controller, useForm } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
 import * as z from 'zod'
-import { ArticleMedium, MonitorPlay, Queue, X } from 'phosphor-react'
+import { TagSimple, X } from 'phosphor-react'
 
 import { ItemsContext } from '../../contexts/ItemsContexts'
 import { categories } from '../../utils/categories'
@@ -100,17 +100,17 @@ export function NewItemModal({ setOpen }: NewItemModalProps) {
               return (
                 <ItemType onValueChange={field.onChange} value={field.value}>
                   <ItemTypeButton value="artigo">
-                    <ArticleMedium size={20} />
+                    <TagSimple size={20} weight="fill" color="#F5FF03" />
                     Artigo
                   </ItemTypeButton>
 
                   <ItemTypeButton value="curso">
-                    <Queue size={20} />
+                    <TagSimple size={20} weight="fill" color="#0CFF03" />
                     Curso
                   </ItemTypeButton>
 
                   <ItemTypeButton value="videoaula">
-                    <MonitorPlay size={20} />
+                    <TagSimple size={20} weight="fill" color="#FE4400" />
                     Videoaula
                   </ItemTypeButton>
                 </ItemType>
