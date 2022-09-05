@@ -2,9 +2,9 @@ import { useState } from 'react'
 import * as Dialog from '@radix-ui/react-dialog'
 
 import logoImg from '../../assets/logo.svg'
+import { NewItemModal } from '../NewItemModal'
 
 import { HeaderContainer, HeaderContent, NewItemButton } from './styles'
-import { NewItemModal } from '../NewItemModal'
 
 export function Header() {
   const [open, setOpen] = useState(false)

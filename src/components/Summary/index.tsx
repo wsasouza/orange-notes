@@ -1,4 +1,4 @@
-import { ArticleMedium, MonitorPlay, Queue } from 'phosphor-react'
+import { TagSimple } from 'phosphor-react'
 
 import { useSummary } from '../../hooks/useSummary'
 import { dateFormatter } from '../../utils/formatter'
@@ -36,7 +36,7 @@ export function Summary() {
       <SummaryCard>
         <header>
           <span>Artigo</span>
-          <ArticleMedium size={32} color="#fff" />
+          <TagSimple size={32} color="#F5FF03" weight="fill" />
         </header>
         <strong>{quantityItemsDisplay(summary.article)}</strong>
         <p>{lastDateItemArticle}</p>
@@ -45,7 +45,7 @@ export function Summary() {
       <SummaryCard>
         <header>
           <span>Curso</span>
-          <Queue size={32} color="#04F6FB" weight="fill" />
+          <TagSimple size={32} color="#0CFF03" weight="fill" />
         </header>
         <strong>{quantityItemsDisplay(summary.course)}</strong>
         <p>{lastDateItemCourse}</p>
@@ -54,7 +54,7 @@ export function Summary() {
       <SummaryCard>
         <header>
           <span>Videoaula</span>
-          <MonitorPlay size={32} color="#F71305" weight="fill" />
+          <TagSimple size={32} color="#FE4400" weight="fill" />
         </header>
         <strong>{quantityItemsDisplay(summary.video)}</strong>
         <p>{lastDateItemVideo}</p>

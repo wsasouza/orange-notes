@@ -44,7 +44,7 @@ export function ItemCard(item: ItemCardProps) {
       </a>
 
       <div className="category">
-        <TagSimple size={16} weight="fill" />
+        <TagSimple size={20} weight="fill" />
         <span>{type?.name}</span>
       </div>
       <div className="date">

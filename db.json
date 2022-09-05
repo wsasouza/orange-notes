@@ -26,6 +26,15 @@
       "category": "language",
       "type": "artigo",
       "createdAt": "2022-09-03T21:53:43.792Z"
+    },
+    {
+      "description": "Como criar uma API de mock para testar suas aplicações ReactJS",
+      "origin": "YouTube",
+      "link": "https://www.youtube.com/watch?v=ywcHsyGUTpU",
+      "category": "front",
+      "type": "videoaula",
+      "createdAt": "2022-09-05T01:05:27.209Z",
+      "id": 7
     }
   ],
   "notes": [
